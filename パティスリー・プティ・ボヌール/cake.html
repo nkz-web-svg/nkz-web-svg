@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit Bonheur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body class="page-cake">
+    <header class="cakes">
+
+        <!-- ハンバーガーメニューの表示 -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Petit Bonheur</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Petit Bonheur</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="cake.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page">Cakes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gateau.html">Gâteau</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="company.html">Company</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- メニュー表示 -->
+    <nav class="page-menu fixed-top">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-4">
+                    <a href="#cakes-ranking">Cakes</a>
+                </div>
+                <div class="col-4">
+                    <a href="gateau.html">Gâteau</a>
+                </div>
+                <div class="col-4">
+                    <a href="company.html">Petit Bonheurについて</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- heroセクション -->
+
+    <main>
+        <section class="cakes-hero" id="cakes-hero">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="cakes/pexels-quang-nguyen-vinh-222549-2144112.jpg" class="d-block w-100" alt="cake1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="hero-title">Petit Bonheur Cakes</h2>
+                            <p class="hero-text">ひと口で、幸せを。</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="cakes/pexels-suzyhazelwood-1098592.jpg" class="d-block w-100" alt="cake2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="cakes/pexels-valeriya-14107.jpg" class="d-block w-100" alt="cake3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <section class="feature cake-la">
+            <div class="container fade-in">
+                <h2 class="section-title" id="cakes-ranking">人気ランキング</h2>
+                <div class="row mt-4">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 cake-card">
+                            <img src="cakes/pexels-catscoming-2035735.jpg" class="card-img-top" alt="tart">
+                            <div class="card-body text-center">
+                                <h5>1位　「幸せの赤い実タルト」</h5>
+                                <p>甘酸っぱいラズベリーと、口どけ柔らかなクリームの<br>
+                                    コントラストが楽しめるケーキです。</p>
+                                <p>780円（税込）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 cake-card">
+                            <img src="cakes/pexels-suzyhazelwood-1126359.jpg" class="card-img-top" alt="mousse">
+                            <div class="card-body text-center">
+                                <h5>2位　「小さな幸せのパレット」</h5>
+                                <p>しっとりとした質感のある層が見た目に美しい<br>
+                                    ムースケーキです。</p>
+                                <p>680円（税込）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 cake-card">
+                            <img src="cakes/pexels-wendywei-3071821.jpg" class="card-img-top" alt="caramel">
+                            <div class="card-body text-center">
+                                <h5>3位　「チェリー・フロマージュ」</h5>
+                                <p>温かみのある琥珀色のキャラメルソースが掛かった<br>
+                                    とろけるような食感のケーキです。</p>
+                                <p>680円（税込）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- アクセスセクション -->
+    <section class="access" id="access">
+        <div class="container fade-in">
+            <h2 class="section-title text-center mb-5">Access</h2>
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="access-info">
+                        <p><strong> 住所:</strong><br>
+                            群馬県桐生市
+                        </p>
+                        <p><strong> 電話番号:</strong><br>
+                            023-645-3453</p>
+                        <p><strong> メールアドレス:</strong><br>
+                            fefag@fma.com</p>
+                    </div>
+                </div>
+                <!-- 地図 -->
+                <div class="col-md-6">
+                    <div class="access-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102662.27313102329!2d139.2372270683104!3d36.47698099366275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601efce441a44f35%3A0xccfb2458c6dd30c6!2z576k6aas55yM5qGQ55Sf5biC!5e0!3m2!1sja!2sjp!4v1767182917227!5m2!1sja!2sjp"
+                            style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- フッター -->
+
+    <footer class="footer">
+        <div class="container container-text">
+
+            <p class="footer-info">
+                Gunma: Kiryu
+                　　Phone: 026-329-2391
+                　　<span>&copy;</span>2025 Petit Bonheur
+            </p>
+
+
+        </div>
+
+        <!-- Googleマップ埋め込み -->
+
+
+    </footer>
+
+    <!-- 画像モーダル -->
+
+    <div id="image-modal">
+        <img id="modal-img" alt="">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    <script src="common.js"></script>
+    <script src="cake.js"></script>
+
+
+
+</body>
+
+</html>

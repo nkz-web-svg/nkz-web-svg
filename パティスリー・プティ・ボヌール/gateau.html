@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gâteau | Petit Bonheur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <header class="gateau">
+
+        <!-- ハンバーガーメニューの表示 -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Petit Bonheur</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Petit Bonheur</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="cake.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page">Gâteau</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cake.html">Cakes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="company.html">Company</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gateau-page">
+        <section class="main-Visual">
+            <h1>濃厚さがほどける、至福のチョコレートケーキ</h1>
+        </section>
+        <section class="feature fade-in">
+            <div class="container">
+                <h2 class="section-title" id="chocolate">Gâteau</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-wrap">
+                                <img src="./detail/pexels-kpaukshtite-1998635.jpg" class="card-img-top" alt="ショコラケーキ">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5>ショコラケーキ</h5>
+                                <p>濃厚なショコラと一粒の苺が織りなす贅沢な味わいが、<br>
+                                    心満たされる『小さな幸せ』を届けます。
+                                </p>
+                                <p>780円（税込）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-wrap card2">
+                                <img src="./detail/pexels-nord6-1775285.jpg" class="card-img-top" alt="ドームショコラ">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5>ドームショコラ</h5>
+                                <p>なめらかな口どけと重厚なショコラの層が織りなす贅沢な味わいに、<br>
+                                    『小さな幸せ』を込めて。
+                                </p>
+                                <p>780円（税込）</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <div class="card-img-wrap">
+                                <img src="./detail/pexels-pixabay-45202.jpg" class="card-img-top" alt="プチショコラ">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5>プチショコラムース</h5>
+                                <p>お口の中でゆっくりとろける濃厚なショコラの風味が、<br>
+                                    心満たされる『小さな幸せ』を運びます。
+                                </p>
+                                <p>880円（税込）</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- モーダル -->
+
+    <div id="image-modal">
+        <img id="modal-img">
+    </div>
+
+    <!-- フッター -->
+
+    <footer class="footer">
+        <div class="container container-text">
+
+            <p class="footer-info">
+                Gunma: Kiryu
+                　　Phone: 026-329-2391
+                　　<span>&copy;</span>2025 Petit Bonheur
+            </p>
+        </div>
+        <!-- Googleマップ埋め込み -->
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+
+    <script src="common.js"></script>
+    <script src="gateau.js"></script>
+</body>
+
+</html>
